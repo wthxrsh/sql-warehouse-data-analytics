@@ -6,6 +6,9 @@ A comprehensive data analytics solution built on top of a modern 3-layer data wa
 
 This analytics project extends the [SQL Data Warehouse](https://github.com/wthxrsh/sql-warehouse) by performing sophisticated data analysis operations on customers, products, and sales data. The project implements various analytical patterns and generates actionable business insights through structured SQL queries.
 
+![Project Roadmap](docs/PROJECT_ROADMAP.png)
+*Analytics Project Roadmap and Architecture Overview*
+
 ### 🎯 Key Objectives
 - Perform comprehensive data exploration and profiling
 - Execute advanced analytical operations (ranking, segmentation, time-series analysis)
