@@ -41,6 +41,9 @@ DataAnalyticsProject/
 │   ├── 11_part_to_whole_analysis.sql  # Proportional analysis
 │   ├── 12_report_customers.sql        # Comprehensive customer report
 │   └── 13_report_products.sql         # Comprehensive product report
+├── visualizations dashboards/   # Data visualizations and dashboards
+│   ├── gold_layer_cust_viz.pdf        # Customer analytics visualizations
+│   └── gold_layer_products_viz.pdf    # Product analytics visualizations
 ├── docs/
 │   └── PROJECT_ROADMAP.png            # Project visualization
 └── README.md
@@ -135,10 +138,17 @@ DataAnalyticsProject/
 - **Market Analysis**: Geographic and category-based insights
 - **KPI Calculations**: Recency, frequency, monetary value analytics
 
+### Data Visualizations & Dashboards
+- **Interactive Dashboards**: Professional visualizations showcasing key insights
+- **Customer Analytics Visualizations**: Comprehensive customer behavior and segmentation charts
+- **Product Performance Dashboards**: Visual analysis of product categories and performance metrics
+- **Executive Summary Views**: High-level KPI dashboards for stakeholder presentations
+
 ### Data Export & Integration
 - Complete dataset exports from all warehouse layers (Bronze, Silver, Gold)
 - Business-ready analytical reports in CSV format
 - Structured data for downstream BI tools and visualization platforms
+- Ready-to-present visualization dashboards in PDF format
 
 ## 📈 Sample Analytics Insights
 
@@ -183,6 +193,56 @@ FROM monthly_sales_summary
 ORDER BY year, month;
 ```
 
+## 📊 Data Visualizations & Dashboards
+
+The project now includes comprehensive data visualizations that transform the analytical insights into visually compelling and actionable dashboards. These visualizations provide stakeholders with intuitive access to key business metrics and trends.
+
+### 🎨 Available Visualizations
+
+#### **Customer Analytics Dashboard** (`visualizations dashboards/gold_layer_cust_viz.pdf`)
+Comprehensive visual analysis of customer data including:
+- **Customer Segmentation Charts**: Visual breakdown of customer segments (VIP, Regular, New)
+- **Demographic Distribution**: Age group analysis and geographic distribution
+- **Customer Lifetime Value**: CLV trends and segment comparisons
+- **Purchase Behavior Patterns**: Frequency and monetary value visualizations
+- **Customer Acquisition Trends**: New customer acquisition over time
+- **RFM Analysis Heatmaps**: Recency, Frequency, and Monetary value correlations
+
+#### **Product Performance Dashboard** (`visualizations dashboards/gold_layer_products_viz.pdf`)
+Detailed visual insights into product performance including:
+- **Product Category Performance**: Revenue and profitability by category
+- **Product Lifecycle Analysis**: Performance trends over time
+- **Top Performers Rankings**: Best and worst performing products
+- **Category Comparison Charts**: Cross-category performance metrics
+- **Product Portfolio Analysis**: Distribution of products across performance segments
+- **Revenue Contribution Analysis**: Part-to-whole visualizations
+
+### 🎯 Visualization Features
+
+- **Executive Summary Views**: High-level KPI dashboards perfect for leadership presentations
+- **Detailed Analytical Charts**: In-depth visualizations for data analysts and business users
+- **Trend Analysis Graphs**: Time-series visualizations showing historical patterns and growth
+- **Segmentation Visuals**: Clear representation of customer and product segments
+- **Performance Metrics**: Visual KPI tracking and benchmark comparisons
+- **Interactive Elements**: Charts designed for easy interpretation and decision-making
+
+### 📈 Business Impact
+
+These visualizations enable:
+- **Faster Decision Making**: Quick visual insights replace complex data analysis
+- **Stakeholder Communication**: Professional charts for presentations and reports
+- **Trend Identification**: Visual patterns help identify opportunities and risks
+- **Performance Monitoring**: Easy tracking of key business metrics
+- **Strategic Planning**: Visual data supports data-driven strategic decisions
+
+### 🔄 Integration with Analytics
+
+The visualizations are directly built from the analytical outputs:
+- **Customer Dashboard**: Powered by `gold.report_customers.csv` data
+- **Product Dashboard**: Derived from `gold.report_products.csv` insights
+- **Consistent Metrics**: All charts use the same analytical foundation as SQL reports
+- **Real-time Ready**: Visualization templates can be updated with fresh data exports
+
 ## 🛠️ Technical Requirements
 
 ### Prerequisites
@@ -225,7 +285,18 @@ Run the scripts in numerical order for the complete analytical journey:
 :r scripts/13_report_products.sql
 ```
 
-### 4. Export Results
+### 4. View Data Visualizations
+Access the comprehensive dashboards to see your analytical insights:
+
+```bash
+# View Customer Analytics Dashboard
+open "visualizations dashboards/gold_layer_cust_viz.pdf"
+
+# View Product Performance Dashboard  
+open "visualizations dashboards/gold_layer_products_viz.pdf"
+```
+
+### 5. Export Additional Results
 The analytical results can be exported to CSV files for further analysis or visualization in tools like Power BI, Tableau, or Python/R.
 
 ## 📊 Business Value & Use Cases
